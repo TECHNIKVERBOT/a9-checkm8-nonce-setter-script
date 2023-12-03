@@ -131,13 +131,17 @@ echo "Please connect device in DFU mode. Press enter when ready to continue"
 
 read randomIrrelevant
 
-echo "Starting ipwnder-lite"
+echo "Starting gaster"
 
 cd files
 
-./ipwnder_macosx -p
+./gaster pwn
 
 sleep 2
+
+./gaster reset
+
+Sleep 2
 
 echo "Uploading bootchain"
 
